@@ -1,0 +1,32 @@
+@use '../../assets/style/global.scss' as *;
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+    .navbar__logo{
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .navbar__links{
+        ul {
+            display: flex;
+
+            li{
+                list-style-type: none;
+                padding: 0px 10px;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

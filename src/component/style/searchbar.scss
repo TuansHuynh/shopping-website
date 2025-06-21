@@ -1,0 +1,47 @@
+@use '../../assets/style/global.scss' as *;
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+
+    input {
+        border: none;
+        outline: none;
+        background-color: rgba(195, 195, 195, 0.223);
+        padding: 12px;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+
+        &::placeholder {
+            color: #86868695;
+            transition: all 0.2s ease-in-out;
+        }
+
+        &:hover,
+        &:focus 
+        {
+            border-radius: 15px;
+            background-color: rgba(195, 195, 195, 0.529);
+
+            &::placeholder {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        border: none;
+        background-color: #ffffff;
+        cursor: pointer;
+
+        span {
+            margin: 2px;
+        }
+    }
+}

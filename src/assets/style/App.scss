@@ -1,0 +1,18 @@
+.content_container{
+    display: flex;
+
+    .menu_bar_container{
+        display: flex;
+    }
+
+    .container_menu_bar{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .menu__bar{
+            margin: 0 50px;
+            padding-bottom: 10px;
+        } 
+    }
+}

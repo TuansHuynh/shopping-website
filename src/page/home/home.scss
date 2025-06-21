@@ -1,0 +1,106 @@
+@use '../../assets/style/global.scss' as *;
+
+.home {
+
+    .home__container {
+        display: flex;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+
+        .category__block {
+            display: flex;
+            flex-direction: column;
+
+            .category__product__name {
+                display: flex;
+                margin: 15px 0 10px 20px;
+                font-size: 25px;
+
+                .link_category {
+                    margin: 10px 0 0 0;
+                    color: #a7a7a7;
+                    text-decoration: none;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: #454545;
+                    }
+                }
+            }
+
+            .category__products {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                flex: 2;
+                gap: 10px;
+
+                .link__product {
+                    text-decoration: none;
+                    color: $text-color;
+
+                    .product {
+                        border: 1px solid $text-color;
+                        border-radius: 10px;
+                        padding: 15px;
+                        transition: all 0.2s ease-in-out;
+
+                        &:hover {
+                            // transform: translateY(-5px);
+
+                            .name__product {
+                                color: #0093ad;
+                            }
+                        }
+
+                        img {
+                            width: 250px;
+                            border-radius: 10px;
+                            padding: 10px;
+                        }
+
+                        .name__product,
+                        .price,
+                        .price__discount {
+                            border-radius: 5px;
+                            margin: 5px 10px;
+                            padding: 5px;
+                        }
+
+                        .name__product {
+                            color: #000000;
+                            transition: all 0.2s ease-in-out;
+                        }
+
+                        .price {
+                            color: #777777;
+                            text-decoration: line-through;
+                        }
+
+                        .price__discount {
+                            position: absolute;
+                            color: rgb(0, 108, 112);
+                        }
+
+                        .add_to_cart {
+                            position: relative;
+                            border: none;
+                            width: fit-content;
+                            background-color: #ffffff;
+                            cursor: pointer;
+                            margin: -3px 0 0 167px;
+                            padding: 6px;
+                            border-radius: 10px;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: #32d4f15f;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

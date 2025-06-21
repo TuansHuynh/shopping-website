@@ -1,0 +1,65 @@
+@use '../../assets/style/global.scss' as *;
+
+.menuBar {
+    display: flex;
+    padding-bottom: 10px;
+
+    .logo{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+        border-radius: 5px;
+        padding: 5px;
+
+        img{
+            width: 20px;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+
+            &:hover{
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    .menu_bar{
+        display: none;
+        transform: translateX(-120px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .active {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        gap: 5px;
+        width: 120px;
+        height: fit-content;
+        background-color: rgb(0, 255, 242);
+        transition: all 0.3s ease-in-out;
+        transform: translateX(-5px);
+        border-radius: 6px;
+
+        .link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+            background-color: rgb(255, 255, 255);
+            color: #000000;
+            border-radius: 0 10px 10px 0;
+            margin: 5px 5px;
+            padding: 5px 10px;
+            gap: 10px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                background-color: rgb(215, 255, 253);
+                border-radius:  0 12px 12px 0;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
