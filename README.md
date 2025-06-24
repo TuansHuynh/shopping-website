@@ -1,4 +1,4 @@
-# This is My website E-commerce
+# This is E-commerce Website
 
 Please, when you clone this project, don't download file zip, you just: 
 ```js
