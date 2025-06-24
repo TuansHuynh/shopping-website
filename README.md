@@ -1,9 +1,9 @@
 # This is E-commerce Website
 
 Please, when you clone this project, don't download file zip, you just: 
-
-## [git clone https://github.com/TuansHuynh/shopping-website](https://github.com/TuansHuynh/shopping-website)
-
+```js
+git clone https://github.com/TuansHuynh/shopping-website
+```
 
 Before you run project, you must:
 ```js
